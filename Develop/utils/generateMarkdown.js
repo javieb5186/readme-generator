@@ -1,12 +1,7 @@
+// Function to generate data with given data.
 function generateMarkdown(data) {
+  // Inititalizations
   let license;
-
-  if(data.license.includes(" "))
-    license = data.license.replace(" ", "%20");
-  else
-    license = data.license;
-
-  let licenseUrl = `https://img.shields.io/badge/license-${license}-blue.svg`;
   let ticks = "```";
   let installation = 
   `${ticks}
@@ -16,6 +11,14 @@ function generateMarkdown(data) {
   `${ticks}
   ${data.test}
   ${ticks}`;
+
+  // To include spaces that pass over the internet
+  if(data.license.includes(" "))
+    license = data.license.replace(" ", "%20");
+  else
+    license = data.license;
+
+  let licenseUrl = `https://img.shields.io/badge/license-${license}-blue.svg`;
   let badge = `![Github License](${licenseUrl})`;
   let github = `[${data.username}](https://github.com/${data.username})`
   let content = 
@@ -59,4 +62,5 @@ function generateMarkdown(data) {
   return content;
 }
 
+// Export the generateMarkdown return
 module.exports = generateMarkdown;
