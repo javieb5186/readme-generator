@@ -61,6 +61,7 @@ const questions = [
   }
 ];
 
+// Generate data and then pass it to writeFile Function
 function writeToFile(fileName, data) {
   let d = generateMarkdown(data);
   writeFile(fileName, d, (err) => {
@@ -69,6 +70,7 @@ function writeToFile(fileName, data) {
   });
 }
 
+// Prompt questions and then pass answers to writeToFile function
 function init() {
   inquirer.prompt(questions)
   .then(answer => {
