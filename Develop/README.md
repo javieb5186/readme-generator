@@ -1,6 +1,6 @@
 
   # Test
-  ![Github License](https://img.shields.io/badge/license-MIT-blue.svg)
+  ![Github License](https://img.shields.io/badge/license-BSD%203-blue.svg)
 
   ## Table of contents
 
@@ -22,10 +22,10 @@
   ```
 
   ## Usage
-  This is a repo that generates a readme.
+  This is just a test
 
   ## License
-  This project is licensed under the MIT license
+  This project is licensed under the BSD 3 license
 
   ## Contributing
   No contributions needed
@@ -37,4 +37,4 @@
   ```
 
   ## Questions
-  If you have any questions about the repo, open an issue or contact me directly at javieb6186@gmail.com. You can find more of my work at [javieb5186](https://github.com/javieb5186).
+  If you have any questions about the repo, open an issue or contact me directly at john.doe123@gmail.com. You can find more of my work at [johndoe123](https://github.com/johndoe123).
